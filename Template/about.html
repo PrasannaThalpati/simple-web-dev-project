@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SmartHub</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="/index.html">SmartHub</a></h1>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container content">
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <h2>About SmartHub</h2>
+          <p>
+            SmartHub is a multi-functional web application that brings together
+            essential tools like a digital clock, to-do list, note-taking app,
+            hydration reminders, quizzes, and more — all in one place.
+          </p>
+          <p>
+            Whether you're working, studying, or just relaxing, SmartHub is
+            designed to simplify your day-to-day tasks with a fun and productive
+            interface. It’s fast, responsive, and doesn’t require any sign-up.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Learning Section -->
+    <section class="learning-section">
+      <h2 class="section-title">Tools in SmartHub</h2>
+      <p class="section-description">
+        Enhance your skills with these fun and functional tools. Start learning
+        in a creative and interactive way!
+      </p>
+
+      <div class="tools-grid">
+        <!-- Row 1 -->
+        <div class="tool-card">
+          <span class="tool-icon">⏰</span>
+          <h3>Clock</h3>
+          <p>Check real-time time in a clean format</p>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon">🚰</span>
+          <h3>Drink Water</h3>
+          <p>Reminders to keep you hydrated</p>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon">😂</span>
+          <h3>Dad Jokes</h3>
+          <p>Random jokes to lighten your mood</p>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="tool-card">
+          <span class="tool-icon">✍️</span>
+          <h3>Auto Text</h3>
+          <p>Cool typewriter text effect</p>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon">📝</span>
+          <h3>Notes App</h3>
+          <p>Write, edit, and delete notes</p>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon">⏳</span>
+          <h3>Countdown</h3>
+          <p>Set a timer for your goals</p>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="tool-card">
+          <span class="tool-icon">🎨</span>
+          <h3>Hover Board</h3>
+          <p>Fun hover effects and animations</p>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon">✅</span>
+          <h3>To-Do List</h3>
+          <p>Manage your daily tasks</p>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon">❓</span>
+          <h3>Quiz App</h3>
+          <p>Play and learn with quizzes</p>
+        </div>
+      </div>
+
+      <!-- <div class="start-learning-wrapper">
+        <button class="start-learning-btn">Start Learning</button>
+      </div> -->
+    </section>
+  </body>
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>SmartHub</h3>
+      <p>Your Everyday Digital Companion – Smart, Simple, Effective.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#github" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SmartHub. Made with ❤️ by Project Team</p>
+    </div>
+  </footer>
+</html>
+
+<style>
+  .learning-section {
+    padding: 50px 20px;
+    background: #f8faff;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #262d3d;
+    margin-bottom: 10px;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+  }
+
+  .tool-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .tool-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .tool-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .tool-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .start-learning-wrapper {
+    margin-top: 30px;
+  }
+
+  .start-learning-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #e03232;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .start-learning-btn:hover {
+    background-color: #ff5858;
+  }
+
+  @media (max-width: 768px) {
+    .tools-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tools-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

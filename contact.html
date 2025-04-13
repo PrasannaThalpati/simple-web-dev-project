@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>SmartHub</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="/index.html">SmartHub</a></h1>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>
+            Have questions, feedback, or need support? Fill out the form and
+            we’ll get back to you shortly.
+          </p>
+
+          <ul class="contact-details">
+            <li><strong>Email:</strong> support@yourapp.com</li>
+            <li><strong>Phone:</strong> +91 98765 43210</li>
+            <li><strong>Location:</strong> Pune, Maharashtra, India</li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>SmartHub</h3>
+      <p>Your Everyday Digital Companion – Smart, Simple, Effective.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#github" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SmartHub. Made with ❤️ by [Your Name]</p>
+    </div>
+  </footer>
+</html>
+
+<!-- CSS Styles -->
+<style>
+  .contact-section {
+    margin-top: 50px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f3f8ff, #e0ecff);
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .contact-info {
+    flex: 1 1 40%;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+    color: #e03232;
+    margin-bottom: 15px;
+  }
+
+  .contact-info p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .contact-details {
+    list-style: none;
+    padding: 0;
+    color: #333;
+  }
+
+  .contact-details li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    flex: 1 1 55%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #444;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #5d5dff;
+    background-color: #fff;
+  }
+
+  .submit-btn {
+    background-color: #e03232;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: flex-start;
+  }
+
+  .submit-btn:hover {
+    background-color: #ff5757;
+  }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+      flex: 1 1 100%;
+    }
+  }
+</style>
